@@ -1,0 +1,188 @@
+html {
+  height: 100%;
+}
+
+.text {
+  padding-top: 200px;
+  list-style: none;
+}
+
+/* 프로필 글자 관련 */
+
+h3.size {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+}
+
+ul li.Profile {
+  color: #fff;
+  padding-left: 600px;
+  line-height: 40px;
+  list-style: none;
+}
+
+.cover_font {
+  color: #fff;
+  padding-left: 150px;
+  line-height: 30px;
+
+}
+
+
+
+
+/* body 관련*/
+body {
+  background: #333;
+  padding-top: 5em;
+  direction: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#content-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.box {
+  height: 100%;
+  position: relative;
+}
+
+/* 타이핑 효과 */
+
+.typewriter {
+  margin-top: 100px;
+}
+
+.typewriter div.font {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.font {
+  margin: 0;
+  padding: 0;
+  color: #f8f9fa;
+}
+
+.typewriter div.font-size {
+  width: 600px;
+  text-align: center;
+  font-size: 50px;
+  color: #f8f9fa;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    /* width: 100%; */
+    width: 600px;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+/* 이미지 관련 */
+.imgz {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0px auto;
+  padding-top: 20px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.img {
+  position: relative;
+  background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_1280.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.img-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.img .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* icon 관련 */
+i {
+  padding-bottom: 10px;
+  padding-left: 600px;
+  color: #adb5bd;
+}
+
+div.contains {
+  display: flex;
+}
+
+/*그래프 */
+.page {
+  margin: 40px;
+}
+
+h1 {
+  margin: 40px 0 60px 0;
+}
+
+.dark-area {
+  background-color: #666;
+  padding: 40px;
+  margin: 0 -40px 20px -40px;
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
