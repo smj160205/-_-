@@ -1,10 +1,22 @@
-/* 제이쿼리 구역나누기 */
-function fnMove(seq) {
-  var offset = $("#box0" + seq).offset();
-  $("html, body").animate(
-    {
-      scrollTop: offset.top
-    },
-    600
-  );
-}
+// 부드럽게 스크롤
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      if (target.length) {
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top
+          },
+          1000
+        );
+        return false;
+      }
+    }
+  });
+});

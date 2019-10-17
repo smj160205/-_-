@@ -3,120 +3,164 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Back Seong min PortFolio</title>
   <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="topMenu.css" />
-  <link rel="stylesheet" href="css/circle.css">
+  <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap&subset=korean" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://kit.fontawesome.com/944b4d1d06.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-
-  <title>Baek Seong min</title>
 </head>
 
 <body>
-  <header id="topMenu">
-    <nav>
-      <ul>
-        <li onclick="fnMove('1')">
-          <a class="menuLink" href="#HOME">HOME</a>
-        </li>
-        <li onclick="fnMove('2')">
-          <a class="menuLink" href="#Profile">Profile</a>
-        </li>
-        <li onclick="fnMove('3')">
-          <a class="menuLink" href="#Skill">Skill</a>
-        </li>
-        <li onclick="fnMove('4')">
-          <a class="menuLink" href="#Portfolio">Portfolio</a>
-        </li>
-        <li onclick="fnMove('5')">
-          <a class="menuLink" href="#Contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+
+  <header>
+    <div class="wrapper">
+      <h1 class="home"><a href='index.html'>Back Seong min</a></h1>
+      <nav>
+        <ul class="menu">
+          <li><a href='#About'>About</a></li>
+          <li><a href='#Skill'>Skill</a></li>
+          <li><a href='#PortFolio'>PortFolio</a></li>
+          <li><a href='#CorTact'>CorTact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <section id="content-wrap">
-    <div id="box01" class="typewriter box" style="background:rgb(173, 173, 173)">
-      <div class="img">
+  <section id="top">
+    <div class="img">
+      <div class="img-cover">
         <div class="content">
-          <div class="text">
-            <div class="font">Back Seong min.</div>
-            <div class="font-size">Front-end developer</div>
-            <div class="font">Portfolio.</div>
+          <div class="typewriter box">
+            <div class="image">
+              <div class="text">
+                <div class="font">Back Seong min.</div>
+                <div class="font-size">Front-end developer</div>
+                <div class="font">Portfolio.</div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-      <div class="img-cover"></div>
     </div>
-
-    <div id="box02" class="box" style="background:rgb(58, 58, 58);">
-
-      <img class="imgz" src="img/1.jpg" alt="증명사진" />
-      <h3 class="size">Back Seong min 백성민</h3>
-      <div class="contains">
-
-
-
-        <ul class="page2">
-          <i class="far fa-address-book fa-3x"></i>
+    </div>
+  </section>
+  <!-- 여긴 텍스트 효과 다시 주기 -->
+  <section id="About">
+    <img class="profile" src="https://cdn.pixabay.com/photo/2016/08/31/18/32/hare-1634315_960_720.jpg" alt="토끼"">
+    <h3>Back Seong min 백성민</h3>
+    <div class='about-1'>
+        <marquee behavior=slide>
+      <p>" 노력하는자 이길사람없다 !"</p> <div>"끊임없는 시도는 성장을 하는것이라 배웠습니다."<br>
+    스스로에게 관대하지않고 냉정하게 생각해<br>
+    <span>부족한것은 노력</span>으로 채우고<br>
+    필요한것은 나서서 배우고<br>
+    주변사람에게는 필요로하는 사람이 되고<br>
+    선배님들에게는 재치있는 후배가되고<br>
+    동료에게는 힘이 되는 좋은동료가 되겠습니다<br>
+    <span>뒤늦게 찾은 저의 적성과 능력을 아낌없이 보여드리고</span><br>
+    <strong>끊임없이 노력해 뒤쳐지지않고 선도하는 프론트엔드개발자가<br> 되겠습니다</strong></div>
+    </marquee>
+    </div>
+    <div class="about-2">
+      <marquee behavior=slide>
+        <ul>
           <li class="Profile">경력: Front-end developer[신입]</li>
           <li class="Profile">생년월일: 92 09 09</li>
           <li class="Profile">사는곳: 울산광역시</li>
           <li class="Profile">연락처: 010 4620 2599</li>
           <li class="Profile">이메일: smj160205@naver.com</li>
         </ul>
-        <div class="cover">
-          <div class="cover_font">
-            <p class="title"> "노력하는자 이길사람없다 !"</p>
-            <div>"끊임없는 시도는 성장을 하는것이라 배웠습니다."<br>
-              스스로에게 관대하지않고 냉정하게 생각해<br>
-              부족한것은 노력으로 채우고<br>
-              필요한것은 나서서 배우고<br>
-              주변사람에게는 필요로하는 사람이 되고<br>
-              선배님들에게는 재치있는 후배가되고<br>
-              동료에게는 힘이 되는 좋은동료가 되겠습니다<br>
-              뒤늦게 찾은 저의 적성과 능력을 아낌없이 보여드리고<br>
-              끊임없이 노력해 뒤쳐지지않고 선도하는 프론트엔드개발자가<br> 되겠습니다</div>
+      </marquee>
+    </div>
+    </div>
+  </section>
+  <section id="Skill">
+    <!-- 여긴 제이쿼리 배우고난뒤 다시 손보기 -->
+    <div class="sklii2">
+      <div class="skillbar clearfix " data-percent="85%">
+        <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+        <div class="skillbar-bar" style="background: #e67e22;"></div>
+        <div class="skill-bar-percent">100%</div>
+      </div>
 
+      <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+        <div class="skillbar-bar" style="background: #3498db;"></div>
+        <div class="skill-bar-percent">100%</div>
+      </div>
 
-          </div>
-        </div>
-
+      <div class="skillbar clearfix " data-percent="40%">
+        <div class="skillbar-title" style="background: #2c3e50;"><span>JavaScript</span></div>
+        <div class="skillbar-bar" style="background: #2c3e50;"></div>
+        <div class="skill-bar-percent">100%</div>
       </div>
     </div>
 
+
+    <!-- 차후 추가할 스킬있으면 추가하기! -->
+    <!-- <div class="skillbar clearfix " data-percent="100%">
+      <div class="skillbar-title" style="background: #46465e;"><span>배우는중</span></div>
+      <div class="skillbar-bar" style="background: #5a68a5;"></div>
+      <div class="skill-bar-percent">100%</div>
     </div>
-    <div id="box03" class="box" style="background:rgb(173, 173, 173);">
-
-      <div class="page">
-
-        
-
-        <!-- default -->
-        <div class="clearfix">
-
-            <div class="c100 p50 big">
-                <span>50%</span>
-                <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                </div>
-            </div>
-
+     
+    <div class="skillbar clearfix " data-percent="100%">
+      <div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
+      <div class="skillbar-bar" style="background: #525252;"></div>
+      <div class="skill-bar-percent">100%</div>
     </div>
-
-
-
+     
+    <div class="skillbar clearfix " data-percent="90%">
+      <div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
+      <div class="skillbar-bar" style="background: #2ecc71;"></div>
+      <div class="skill-bar-percent">90%</div>
     </div>
-    <div id="box04" class="box" style="background:rgb(58, 58, 58);">
-      ㄴㅇㄴㅇ
-    </div>
-    <div id="box05" class="box" style="background:rgb(173, 173, 173);">
-      ㄴㅇㄴㅇ
-    </div>
+     
+    <div class="skillbar clearfix " data-percent="70%">
+      <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+      <div class="skillbar-bar" style="background: #4288d0;"></div>
+      <div class="skill-bar-percent">70%</div>
+    </div> -->
   </section>
+  <section id="PortFolio">
+    <!-- 여긴 포트폴리오 사이트 만든후 기재 -->
+    <div class="imgs">
+      <a href="naver.com"><img class="go"
+          src="https://cdn.pixabay.com/photo/2017/01/22/12/08/imac-1999640_960_720.png">
+      </a>
+      <a href="naver.com"><img class="go"
+          src="https://cdn.pixabay.com/photo/2017/01/22/12/08/imac-1999640_960_720.png">
+      </a>
+      <a href="naver.com"><img class="go"
+          src="https://cdn.pixabay.com/photo/2017/01/22/12/08/imac-1999640_960_720.png">
+      </a>
+      <a href="naver.com"><img class="go"
+          src="https://cdn.pixabay.com/photo/2017/01/22/12/08/imac-1999640_960_720.png">
+      </a>
+    </div>
+
+  </section>
+  <!-- 여긴 새로 손봐야될듯 -->
+  <footer id="CorTact">
+    <address>
+      <div class="address">
+        <p>010 4620 2599</p>
+        <p>smj160205@naver.com</p>
+        <p class="copy">
+          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+          <br>
+          2019.10.16~2019.xx.xx Back Seong min PortFolio
+        </p>
+
+      </div>
+    </address>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  <script src="bar.js"></script>
+
 </body>
 
 </html>
