@@ -1,4 +1,5 @@
 /* 메뉴상단바 */
+
 * {
   margin: 0;
   padding: 0;
@@ -136,7 +137,6 @@ div.font {
 }
 
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;
@@ -310,4 +310,315 @@ address {
 
 .imgs {
   padding-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cleartfix {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  header {
+    height: 35px;
+    background-color: black;
+    border: 1px solid black;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+  }
+
+  h1.home {
+    color: white;
+    line-height: 35px;
+    font-size: 13px;
+    float: left;
+    padding-left: 21px;
+  }
+
+  .menu {
+    float: right;
+    line-height: 32px;
+    font-size: 13px;
+  }
+
+  .menu li {
+    list-style: none;
+    padding-left: 30px;
+    float: left;
+    padding-left: 27px;
+    font-size: 13px;
+  }
+
+  .memu a {
+    line-height: 75px;
+    color: white;
+    padding: 0 15px;
+    display: block;
+    text-decoration: none;
+  }
+
+  /* top */
+  .img {
+    position: relative;
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg);
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .img-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  .img .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+    z-index: 2;
+    text-align: center;
+  }
+
+  /* 타이핑 효과 */
+  .typewriter {
+    margin-top: 100px;
+  }
+
+  .typewriter div.font {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  div.font {
+    margin: 0;
+    padding: 0;
+    color: #f8f9fa;
+  }
+
+  .typewriter div.font-size {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #f8f9fa;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      /* width: 100%; */
+      width: 600px;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: orange;
+    }
+  }
+
+  /* 구역나누기 섹션 */
+  section {
+    width: 100%;
+    min-height: 938px;
+  }
+
+  footer {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  /* #top {
+  background: black;
+}
+#About {
+  background: blue;
+}
+#Skill {
+  background: blueviolet;
+}
+#PortFolio {
+  background: chartreuse;
+}
+#CorTact {
+  background: cornflowerblue;
+} */
+  /* 프로필 */
+
+  .profile {
+    width: 200px;
+    height: 221px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 20px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about-1 {
+    font-family: "Hi Melody", cursive;
+    font-size: 20px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 62px;
+    letter-spacing: 4px;
+    line-height: 29px;
+  }
+
+  .about-2 {
+    font-family: "Hi Melody", cursive;
+    float: right;
+    margin-top: 49px;
+    margin-right: 246px;
+    letter-spacing: 8px;
+    line-height: 38px;
+    font-size: 29px;
+  }
+
+  /*SKill*/
+  .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 50%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+  }
+
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .sklii2 {
+    padding-top: 200px;
+    margin-left: 36px;
+  }
+
+  /* footer */
+  address {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 200px;
+    font-style: normal;
+    background: black;
+  }
+
+  .address {
+    color: white;
+  }
+
+  .go {
+    width: 20%;
+    height: 20%;
+  }
+
+  .imgs {
+    padding-top: 200px;
+  }
 }
